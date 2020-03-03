@@ -1,0 +1,14 @@
+package projetynov.categorie.repositories;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import projetynov.categorie.model.Categorie;
+
+
+@Repository
+public interface CategorieRepository extends CrudRepository<Categorie, Long>{
+	
+	public Categorie findById(String Id);
+	
+}
